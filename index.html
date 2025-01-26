@@ -18,13 +18,13 @@
       <nav class="header__nav">
         <ul class="nav__links">
           <li>
-            <a href="#request-help" class="nav__link">Request Help</a>
+            <a href="#request-help" class="nav__link">Our Mission</a>
           </li>
           <li>
-            <a href="#volunteer" class="nav__link">Become a Volunteer</a>
+            <button class="nav__volunteer-btn">Become a Volunteer</button>
           </li>
           <li>
-            <a href="#matchResults" class="nav__link">Find Assistance</a>
+            <button class="nav__assistance-btn">Find Assistance</button>
           </li>
           <li>
             <a href="#request-help" class="nav__link">About</a>
@@ -132,6 +132,117 @@
         &copy; 2025 Be Cool About Wildfires | Helping communities in need.
       </p>
     </footer>
+
+    <div class="modal modal_opened" id="volunteer_modal">
+      <div class="modal__container">
+        <div class="modal__header">
+          <div class="modal__title">
+            <button type="button" class="modal__close"></button>
+          </div>
+          <form class="modal__form" id="add-card-form">
+            <label for="add-card-link-input" class="modal__label">
+              " Full Name: "
+              <input
+                id="add-card-link-input"
+                type="text"
+                class="modal__input"
+                name="name"
+                placeholder="Enter Name"
+                required
+                minlength="2"
+                maxlength="20"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Zip Code: " <input id="add-card-link-input" type="number"
+              class="modal__input" name="zip_number" placeholder="Enter Zip
+              Code" required minlength="5" maxlength= 10">
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Phone Number: " <input id="add-card-link-input" type="number"
+              class="modal__input" name="phone_number" placeholder="Enter Phone
+              Number" required minlength="10" maxlength= 11">
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Email: " <input id="add-card-link-input" type="text"
+              class="modal__input" name="email" placeholder="Enter Email"
+              required minlength="8" maxlength= 40">
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <button
+              type="submit"
+              class="modal__submit-btn modal__submit-btn_disabled"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal_opened" id="assistance_modal">
+      <div class="modal__container">
+        <div class="modal__header">
+          <div class="modal__title">
+            <button type="button" class="modal__close"></button>
+          </div>
+          <form class="modal__form" id="add-card-form">
+            <label for="add-card-link-input" class="modal__label">
+              " Full Name: "
+              <input
+                id="add-card-link-input"
+                type="text"
+                class="modal__input"
+                name="name"
+                placeholder="Enter Name"
+                required
+                minlength="2"
+                maxlength="20"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Zip Code: " <input id="add-card-link-input" type="number"
+              class="modal__input" name="zip_number" placeholder="Enter Zip
+              Code" required minlength="5" maxlength= 10">
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Phone Number: " <input id="add-card-link-input" type="number"
+              class="modal__input" name="phone_number" placeholder="Enter Phone
+              Number" required minlength="10" maxlength= 11">
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Email: " <input id="add-card-link-input" type="text"
+              class="modal__input" name="email" placeholder="Enter Email"
+              required minlength="8" maxlength= 40">
+              <span id="add-card-name-input-error" class="modal__error"></span>
+            </label>
+            <div class="modal">
+              <label for="victimNeeds" class="modal">What do you need?</label>
+              <select id="victimNeeds" class="modal__select" required>
+                <option value="" disabled selected>
+                  Please select your need
+                </option>
+                <option value="shelter">Shelter</option>
+                <option value="food">Food</option>
+                <option value="water">Water</option>
+              </select>
+            </div>
+            <button
+              type="submit"
+              class="modal__submit-btn modal__submit-btn_disabled"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="scripts.js"></script>
   </body>
