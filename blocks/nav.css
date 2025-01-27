@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin: 25px auto auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.nav__link {
+  background-color: #7d4533;
+  color: white;
+  height: 25px;
+  width: 130px;
+  border-radius: 50px;
+  font-size: 20px;
+}
