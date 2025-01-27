@@ -1,0 +1,35 @@
+.form__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.form__label {
+  flex-shrink: 0;
+  width: 80px;
+  color: white;
+}
+
+.form__submit-btn {
+  align-self: center;
+  margin-left: 88px;
+  width: 125px;
+  background-color: #a82525;
+  color: white;
+}
+
+.form__signup-btn {
+  align-self: center;
+  margin-left: 88px;
+  width: 100px;
+  background-color: #56aeff;
+  color: white;
+}

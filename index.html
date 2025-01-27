@@ -30,17 +30,19 @@
       </p>
     </header>
 
-    <main>
-      <div class="mission">/* mission statement/about us and cause */</div>
+    <main class="main">
+      <div class="main__mission">
+        /* mission statement/about us and cause */
+      </div>
 
-      <section>
-        <div class="connect connect__victum">
+      <section class="connect">
+        <div class="connect__container connect__victim">
           <h2 class="connect__title">Request Assistance</h2>
           <p class="connect__description">
             If you need food, water, or shelter, fill out this form.
           </p>
 
-          <form class="form__victim" id="victimForm">
+          <form class="form__menu" id="victimForm">
             <div class="form__group">
               <label for="victimName" class="form__label">Full Name:</label>
               <input type="text" id="victimName" class="form__input" required />
@@ -52,17 +54,23 @@
             </div>
 
             <div class="form__group">
-              <label for="victimNeeds" class="form__label"
-                >What do you need?</label
-              >
-              <select id="victimNeeds" class="form__select" required>
-                <option value="" disabled selected>
-                  Please select your need
-                </option>
-                <option value="shelter">Shelter</option>
-                <option value="food">Food</option>
-                <option value="water">Water</option>
-              </select>
+              <label for="victimPhone" class="form__label">Phone #:</label>
+              <input
+                type="text"
+                id="victimPhone"
+                class="form__input"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="volunteerEmail" class="form__label">Email:</label>
+              <input
+                type="text"
+                id="volunteerEmail"
+                class="form__input"
+                required
+              />
             </div>
 
             <button type="submit" class="form__submit-btn">
@@ -71,14 +79,14 @@
           </form>
         </div>
 
-        <div class="connect connect__volunteer">
+        <div class="connect__container connect__volunteer">
           <h2 class="connect__title">Become a Volunteer</h2>
           <p class="connect__description">
             Sign up to help wildfire victims in your area.
           </p>
-          <form class="form__volunteer" id="volunteerForm">
+          <form class="form__menu" id="volunteerForm">
             <div class="form__group">
-              <label for="volunteerName" class="form__label">Full Name</label>
+              <label for="volunteerName" class="form__label">Full Name:</label>
               <input
                 type="text"
                 id="volunteerName"
@@ -96,9 +104,7 @@
               />
             </div>
             <div class="form__group">
-              <label for="volunteerPhone" class="form__label"
-                >Phone Number:</label
-              >
+              <label for="volunteerPhone" class="form__label">Phone #:</label>
               <input
                 type="text"
                 id="volunteerPhone"
@@ -115,8 +121,7 @@
                 required
               />
             </div>
-
-            <button type="submit" class="form__submit-btn">Sign Up</button>
+            <button type="submit" class="form__signup-btn">Sign Up</button>
           </form>
         </div>
       </section>
