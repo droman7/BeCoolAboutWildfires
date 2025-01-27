@@ -30,110 +30,155 @@
       </p>
     </header>
 
-    <main>
-      <div class="mission">/* mission statement/about us and cause */</div>
+    <section id="aboutUS" class="section about__us-section">
+      <div class="section__content">
+        <h2 class="section__title">About Us</h2>
+        <p id="aboutUsDescription" class="section__description">
+          <strong>Be Cool About Wildfires</strong>is a nonprofit focused on
+          helping communities affected by wildfires. We connect victims with
+          volunteers and resources to provide immediate relief. In addition to
+          emergency support, we raise awareness and collaborate with local
+          authorities to improve wildfire preparedness.
+          <span id="dots">...</span
+          ><span id="more" style="display: none"
+            >Our mission is to build stronger communities and provide ongoing
+            support to those in need.</span
+          >
+        </p>
+        <button
+          class="read-more-btn"
+          onclick="toggleDescription('aboutUsDescription')"
+        >
+          Read More
+        </button>
+      </div>
+    </section>
 
-      <section>
-        <div class="connect connect__victum">
-          <h2 class="connect__title">Request Assistance</h2>
-          <p class="connect__description">
-            If you need food, water, or shelter, fill out this form.
-          </p>
+    <section id="mission" class="section mission-section">
+      <div class="section-content">
+        <h2 class="section__title">Our Mission</h2>
+        <p class="section__description">
+          Our mission is to offer immediate assistance and relief to those
+          impacted by wildfires by connecting them with willing volunteers. We
+          beleive in the strength of community support to provide hope and
+          essential resources to those in need.
+        </p>
+      </div>
+    </section>
 
-          <form class="form__victim" id="victimForm">
-            <div class="form__group">
-              <label for="victimName" class="form__label">Full Name:</label>
-              <input type="text" id="victimName" class="form__input" required />
-            </div>
+    <!-- Request Assistance Modal -->
+    <div id="connectModal" class="modal">
+      <span class="close" onclick="closeModal('connectModal')">&times;</span>
+      <h2 class="connect__title">Request Assistance</h2>
+      <p id="connectAssistance" class="connect__description">
+        If you’re affected by a wildfire, Be Cool About Wildfires can help you
+        find the support you need. We connect survivors with local volunteers
+        who provide shelter, food, water, and other essential resources. Fill
+        out our simple form, and we’ll match you with the right support,
+        including emergency supplies and counseling services, to assist you
+        through this difficult time. <span id="dots">...</span
+        ><span id="more" style="display: none"
+          >After submitting the form, our team will review the request and reach
+          out to you as soon as possible. Please ensure that all required fields
+          are filled out carefully. Thanks you for reaching out to us for
+          assistance.</span
+        >
+      </p>
+      <button
+        id="readMorebtn"
+        onclick="toggleReadMore()"
+        class="read__more-btn"
+      >
+        Read More
+      </button>
 
-            <div class="form__group">
-              <label for="victimZip" class="form__label">Zip Code:</label>
-              <input type="text" id="victimZip" class="form__input" required />
-            </div>
-
-            <div class="form__group">
-              <label for="victimNeeds" class="form__label"
-                >What do you need?</label
-              >
-              <select id="victimNeeds" class="form__select" required>
-                <option value="" disabled selected>
-                  Please select your need
-                </option>
-                <option value="shelter">Shelter</option>
-                <option value="food">Food</option>
-                <option value="water">Water</option>
-              </select>
-            </div>
-
-            <button type="submit" class="form__submit-btn">
-              Submit Request
-            </button>
-          </form>
+      <form class="form__victim" id="victimForm">
+        <div class="form__group">
+          <label for="victimName" class="form__label">Full Name:</label>
+          <input type="text" id="victimName" class="form__input" required />
         </div>
 
-        <div class="connect connect__volunteer">
-          <h2 class="connect__title">Become a Volunteer</h2>
-          <p class="connect__description">
-            Sign up to help wildfire victims in your area.
-          </p>
-          <form class="form__volunteer" id="volunteerForm">
-            <div class="form__group">
-              <label for="volunteerName" class="form__label">Full Name</label>
-              <input
-                type="text"
-                id="volunteerName"
-                class="form__input"
-                required
-              />
-            </div>
-            <div class="form__group">
-              <label for="volunteerZip" class="form__label">Zip Code:</label>
-              <input
-                type="text"
-                id="volunteerZip"
-                class="form__input"
-                required
-              />
-            </div>
-            <div class="form__group">
-              <label for="volunteerPhone" class="form__label"
-                >Phone Number:</label
-              >
-              <input
-                type="text"
-                id="volunteerPhone"
-                class="form__input"
-                required
-              />
-            </div>
-            <div class="form__group">
-              <label for="volunteerEmail" class="form__label">Email:</label>
-              <input
-                type="text"
-                id="volunteerEmail"
-                class="form__input"
-                required
-              />
-            </div>
-
-            <button type="submit" class="form__submit-btn">Sign Up</button>
-          </form>
+        <div class="form__group">
+          <label for="victimZip" class="form__label">Zip Code:</label>
+          <input type="text" id="victimZip" class="form__input" required />
         </div>
-      </section>
-    </main>
 
+        <div class="form__group">
+          <label for="victimNeeds" class="form__label">What do you need?</label>
+          <select id="victimNeeds" class="form__select" required>
+            <option value="" disabled selected>Please select your need</option>
+            <option value="shelter">Shelter</option>
+            <option value="food">Food</option>
+            <option value="water">Water</option>
+          </select>
+        </div>
+
+        <button type="submit" class="form__submit-btn">Submit Request</button>
+      </form>
+    </div>
+
+    <!-- Volunteer Sign-up Modal -->
+    <div id="connectModal" class="modal">
+      <span class="close" onclick="closeModal('connectModal')">&times;</span>
+
+      <h2 class="connect__title">Become a Volunteer</h2>
+      <p class="connect__description">
+        Becoming a volunteer with Be Cool About Wildfires is easy and impactful.
+        Volunteers support wildfire survivors by distributing supplies, offering
+        shelter, and helping with evacuation efforts.
+        <span id="dots">...</span
+        ><span id="more" style="display: none">
+          Whether you’re on the ground or helping virtually, we provide all
+          necessary training and resources. Sign up today, fill out the
+          volunteer form, and we’ll connect you with local opportunities to make
+          a difference in your community.</span
+        >
+      </p>
+      <button
+        id="readMorebtn"
+        onclick="toggleReadMore()"
+        class="read__more-btn"
+      >
+        Read More
+      </button>
+
+      <form class="form__volunteer" id="volunteerForm">
+        <div class="form__group">
+          <label for="volunteerName" class="form__label">Full Name</label>
+          <input type="text" id="volunteerName" class="form__input" required />
+        </div>
+        <div class="form__group">
+          <label for="volunteerZip" class="form__label">Zip Code:</label>
+          <input type="text" id="volunteerZip" class="form__input" required />
+        </div>
+        <div class="form__group">
+          <label for="volunteerPhone" class="form__label">Phone Number:</label>
+          <input type="text" id="volunteerPhone" class="form__input" required />
+        </div>
+        <div class="form__group">
+          <label for="volunteerEmail" class="form__label">Email:</label>
+          <input type="text" id="volunteerEmail" class="form__input" required />
+        </div>
+
+        <button type="submit" class="form__submit-btn">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- Match Results Section -->
     <section class="matches" id="matchResults">
       <div class="section__content">
         <h2 class="matches__list">Available Volunteer Near You</h2>
         <ul class="matches__list" id="volunteerList"></ul>
       </div>
     </section>
-    <div class="about"></div>
+
+    <!-- Footer Section -->
     <footer class="footer">
       <p class="footer__text">
         &copy; 2025 Be Cool About Wildfires | Helping communities in need.
       </p>
     </footer>
+
     <!-- <div class="modal modal_opened" id="volunteer_modal">
       <div class="modal__container">
         <div class="modal__header">
