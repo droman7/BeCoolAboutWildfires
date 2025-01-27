@@ -1,0 +1,8 @@
+.main {
+  background-image: linear-gradient(to right, #a82525, #56aeff);
+}
+
+.main__mission {
+  display: flex;
+  justify-content: center;
+}
