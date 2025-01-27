@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Be Cool About Wildfires</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header class="header">
@@ -53,12 +47,25 @@
           <p class="connect__description">
             If you need food, water, or shelter, fill out this form.
           </p>
+    <div class="mission">/* mission statement/about us and cause */</div>
+
+    <section class="connect" id="request-help">
+      <div class="connect__victim">
+        <h2 class="connect__title">Request Assistance</h2>
+        <p class="connect__description">
+          If you need food, water, or shelter, fill out this form.
+        </p>
 
           <form class="form__victim" id="victimForm">
             <div class="form__group">
               <label for="victimName" class="form__label">Full Name:</label>
               <input type="text" id="victimName" class="form__input" required />
             </div>
+        <form class="form__victim" id="victimForm">
+          <div class="form__group">
+            <label for="victimName" class="form__label">Full Name:</label>
+            <input type="text" id="victimName" class="form__input" required />
+          </div>
 
             <div class="form__group">
               <label for="victimZip" class="form__label">Zip Code:</label>
@@ -129,7 +136,55 @@
                 required
               />
             </div>
+          <button type="submit" class="form__submit-btn">Submit Request</button>
+        </form>
+      </div>
 
+      <div class="connect__volunteer">
+        <h2 class="connect__title">Become a Volunteer</h2>
+        <p class="connect__description">
+          Sign up to help wildfire victims in your area.
+        </p>
+        <form class="form__volunteer" id="volunteerForm">
+          <div class="form__group">
+            <label for="volunteerName" class="form__label">Full Name</label>
+            <input
+              type="text"
+              id="volunteerName"
+              class="form__input"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="volunteerZip" class="form__label">Zip Code:</label>
+            <input type="text" id="volunteerZip" class="form__input" required />
+          </div>
+          <div class="form__group">
+            <label for="volunteerPhone" class="form__label"
+              >Phone Number:</label
+            >
+            <input
+              type="text"
+              id="volunteerPhone"
+              class="form__input"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="volunteerEmail" class="form__label">Email:</label>
+            <input
+              type="text"
+              id="volunteerEmail"
+              class="form__input"
+              required
+            />
+          </div>
+
+          <button type="submit" class="form__submit-btn">Sign Up</button>
+        </form>
+      </div>
+    </section>
+    <section class="matches" id="matchResults">
             <button type="submit" class="form__submit-btn">Sign Up</button>
           </form>
         </div>
@@ -140,14 +195,114 @@
       <div class="section__content">
         <h2 class="matches__list">Available Volunteer Near You</h2>
         <ul class="matches__list" id="volunteerList"></ul>
+        <h2 class="matches__list">Available Volunteer Near You</h2>
+        <ul class="matches__list" id="volunteerList"></ul>
       </div>
     </section>
     <div class="about"></div>
+    <div class="about"></div>
     <footer class="footer">
+      <p class="footer__text">
+        &copy; 2025 Be Cool About Wildfires | Helping communities in need
+      </p>
+      <div class="footer__info">
+        <h3 class="footer__contributors">Contributors</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <div class="footer__social">
+              <a href="https://github.com/trangmtruong" target="_blank">
+                <img
+                  src="./images/github-mark-white.png"
+                  alt="GitHub Logo"
+                  class="footer__github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/trangmtruong/"
+                target="_blank"
+              >
+                <img
+                  src="./images/linkedin-icon.png"
+                  alt="LinkedIn Logo"
+                  class="footer__linkedin"
+                />
+              </a>
+            </div>
+            <p class="footer__name">Trang T.</p>
+          </li>
+          <li class="footer__list-item">
+            <div class="footer__social">
+              <a href="https://github.com/droman7" target="_blank">
+                <img
+                  src="./images/github-mark-white.png"
+                  alt="GitHub Logo"
+                  class="footer__github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/davidroman720/"
+                target="_blank"
+              >
+                <img
+                  src="./images/linkedin-icon.png"
+                  alt="LinkedIn Logo"
+                  class="footer__linkedin"
+                />
+              </a>
+            </div>
+            <p class="footer__name">David R.</p>
+          </li>
+          <li class="footer__list-item">
+            <div class="footer__social">
+              <a href="https://github.com/AltiusVoyage" target="_blank">
+                <img
+                  src="./images/github-mark-white.png"
+                  alt="GitHub Logo"
+                  class="footer__github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/john-altius/"
+                target="_blank"
+              >
+                <img
+                  src="./images/linkedin-icon.png"
+                  alt="LinkedIn Logo"
+                  class="footer__linkedin"
+                />
+              </a>
+            </div>
+            <p class="footer__name">Jonathan B.</p>
+          </li>
+          <li class="footer__list-item">
+            <div class="footer__social">
+              <a href="" target="_blank">
+                <img
+                  src="./images/github-mark-white.png"
+                  alt="GitHub Logo"
+                  class="footer__github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/regina-w-3317818a/"
+                target="_blank"
+              >
+                <img
+                  src="./images/linkedin-icon.png"
+                  alt="LinkedIn Logo"
+                  class="footer__linkedin"
+                />
+              </a>
+            </div>
+            <p class="footer__name">Regina W.</p>
+          </li>
+        </ul>
+      </div>
       <p class="footer__text">
         &copy; 2025 Be Cool About Wildfires | Helping communities in need.
       </p>
     </footer>
+    <div class="modal modal_opened" id="volunteer_modal">
     <!-- <div class="modal modal_opened" id="volunteer_modal">
       <div class="modal__container">
         <div class="modal__header">
@@ -169,6 +324,20 @@
               />
               <span id="add-card-name-input-error" class="modal__error"></span>
             </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Zip Code: "
+              <input
+                id="add-card-link-input"
+                type="number"
+                class="modal__input"
+                name="zip_number"
+                placeholder="Enter Zip
+              Code"
+                required
+                minlength="5"
+                maxlength="10"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
             <label for="add-card-zip-input" class="modal__label">
               " Zip Code: " <input id="add-card-zip-input" type="number"
               class="modal__input" name="zip_number" placeholder="Enter Zip
@@ -181,6 +350,19 @@
               Number" required minlength="10" maxlength= 11">
               <span id="add-card-phone-input-error" class="modal__error"></span>
             </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Email: "
+              <input
+                id="add-card-link-input"
+                type="text"
+                class="modal__input"
+                name="email"
+                placeholder="Enter Email"
+                required
+                minlength="8"
+                maxlength="40"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
             <label for="add-card-email-input" class="modal__label">
               " Email: " <input id="add-card-email-input" type="text"
               class="modal__input" name="email" placeholder="Enter Email"
@@ -219,18 +401,59 @@
               />
               <span id="add-card-name-input-error" class="modal__error"></span>
             </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Zip Code: "
+              <input
+                id="add-card-link-input"
+                type="number"
+                class="modal__input"
+                name="zip_number"
+                placeholder="Enter Zip
+              Code"
+                required
+                minlength="5"
+                maxlength="10"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
             <label for="add-card-zip-input" class="modal__label">
               " Zip Code: " <input id="add-card-zip-input" type="number"
               class="modal__input" name="zip_number" placeholder="Enter Zip
               Code" required minlength="5" maxlength= 10">
               <span id="add-card-zip-input-error" class="modal__error"></span>
             </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Phone Number: "
+              <input
+                id="add-card-link-input"
+                type="number"
+                class="modal__input"
+                name="phone_number"
+                placeholder="Enter Phone
+              Number"
+                required
+                minlength="10"
+                maxlength="11"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
             <label for="add-card-phone-input" class="modal__label">
               " Phone Number: " <input id="add-card-phone-input" type="number"
               class="modal__input" name="phone_number" placeholder="Enter Phone
               Number" required minlength="10" maxlength= 11">
               <span id="add-card-phone-input-error" class="modal__error"></span>
             </label>
+            <label for="add-card-link-input" class="modal__label">
+              " Email: "
+              <input
+                id="add-card-link-input"
+                type="text"
+                class="modal__input"
+                name="email"
+                placeholder="Enter Email"
+                required
+                minlength="8"
+                maxlength="40"
+              />
+              <span id="add-card-name-input-error" class="modal__error"></span>
             <label for="add-card-email-input" class="modal__label">
               " Email: " <input id="add-card-email-input" type="text"
               class="modal__input" name="email" placeholder="Enter Email"

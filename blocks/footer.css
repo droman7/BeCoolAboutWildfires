@@ -1,0 +1,119 @@
+.footer {
+  background: linear-gradient(
+    270deg,
+    #7d4533,
+    /* Base brown */ #5e3023,
+    /* Dark brown */ #4c1c13,
+    /* Deep reddish-brown */ #3b1d0a,
+    /* Almost black brown */ #7d4533 /* Deep reddish-brown */
+  );
+  background-color: #7d4533;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px;
+
+  position: relative;
+  overflow: hidden;
+}
+.footer::before,
+.footer::after {
+  content: "🔥 🔥 🔥 🔥 🔥";
+  position: absolute;
+  bottom: -50px; /* Start below the footer */
+  left: 10%;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.8;
+  animation: fireEmbers 5s linear infinite;
+}
+
+/* Second layer of embers for variation */
+.footer::after {
+  left: 20%;
+  font-size: 25px;
+  opacity: 0.6;
+  animation-duration: 7s;
+}
+
+/* Ember floating animation */
+@keyframes fireEmbers {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-80px) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-160px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.footer__text {
+  font-size: 15px;
+  text-shadow: 0 0 10px #ff4500, 0 0 20px #ff8c00, 0 0 30px #ff6347;
+  animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+  0% {
+    text-shadow: 0 0 10px #ff4500;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff8c00;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff6347;
+  }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__contributors {
+  margin: 0;
+  font-size: 16px;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__list-item {
+  display: flex;
+  gap: 5px;
+  font-size: 15px;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.footer__github {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+.footer__github:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+.footer__linkedin {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease-in-out;
+}
+.footer__linkedin:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+.footer__name {
+  margin: 0;
+}
