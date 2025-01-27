@@ -4,43 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Be Cool About Wildfires</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
-        <h1 class="title">Be Cool About Wildfires</h1>
-        <p class="subtitle">
-          Connecting wildfire victims with local volunteers for support.
-        </p>
-      </div>
-
       <nav class="header__nav">
         <ul class="nav__links">
           <li>
             <a href="#request-help" class="nav__link">Our Mission</a>
           </li>
           <li>
-            <button class="nav__volunteer-btn">Become a Volunteer</button>
+            <a href="#volunteer" class="nav__link">Become a Volunteer</a>
           </li>
           <li>
-            <button class="nav__assistance-btn">Find Assistance</button>
+            <a href="#victim" class="nav__link">Find Assistance</a>
           </li>
           <li>
-            <a href="#request-help" class="nav__link">About</a>
+            <a href="#request-help" class="nav__link">About Us</a>
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">Be Cool About Wildfires</h1>
+      <p class="header__motto">
+        Connecting wildfire victims with local volunteers for support.
+      </p>
     </header>
 
-    <section class="section__help-section" id="request-help">
-      <div class="section__content">
-        <h2 class="section-title">Request Assistance</h2>
-        <p class="section-description">
+    <div class="mission">/* mission statement/about us and cause */</div>
+
+    <section>
+      <div class="connect connect__victum">
+        <h2 class="connect__title">Request Assistance</h2>
+        <p class="connect__description">
           If you need food, water, or shelter, fill out this form.
         </p>
 
-        <form class="form__help-form" id="victimForm">
+        <form class="form__victim" id="victimForm">
           <div class="form__group">
             <label for="victimName" class="form__label">Full Name:</label>
             <input type="text" id="victimName" class="form__input" required />
@@ -65,19 +64,16 @@
             </select>
           </div>
 
-          <button type="submit" class="submit__btn">Submit Request</button>
+          <button type="submit" class="form__submit-btn">Submit Request</button>
         </form>
       </div>
-    </section>
 
-    <section class="section__volunteer-section" id="voluteer">
-      <div class="section__content">
-        <h2 class="section__title">Become a Volunteer</h2>
-        <p class="section__description">
+      <div class="connect connect__volunteer">
+        <h2 class="connect__title">Become a Volunteer</h2>
+        <p class="connect__description">
           Sign up to help wildfire victims in your area.
         </p>
-
-        <form class="form__volunteer-form" id="volunteerForm">
+        <form class="form__volunteer" id="volunteerForm">
           <div class="form__group">
             <label for="volunteerName" class="form__label">Full Name</label>
             <input
@@ -87,12 +83,10 @@
               required
             />
           </div>
-
           <div class="form__group">
             <label for="volunteerZip" class="form__label">Zip Code:</label>
             <input type="text" id="volunteerZip" class="form__input" required />
           </div>
-
           <div class="form__group">
             <label for="volunteerPhone" class="form__label"
               >Phone Number:</label
@@ -104,7 +98,6 @@
               required
             />
           </div>
-
           <div class="form__group">
             <label for="volunteerEmail" class="form__label">Email:</label>
             <input
@@ -115,25 +108,24 @@
             />
           </div>
 
-          <button type="submit" class="submit__btn">Sign Up</button>
+          <button type="submit" class="form__submit-btn">Sign Up</button>
         </form>
       </div>
     </section>
 
-    <section class="section__match-section" id="matchResults">
+    <section class="matches" id="matchResults">
       <div class="section__content">
-        <h2 class="section-title">Available Volunteer Near You</h2>
-        <ul class="match__list" id="volunteerList"></ul>
+        <h2 class="matches__list">Available Volunteer Near You</h2>
+        <ul class="matches__list" id="volunteerList"></ul>
       </div>
     </section>
-
+    <div class="about"></div>
     <footer class="footer">
-      <p class="footer-text">
+      <p class="footer__text">
         &copy; 2025 Be Cool About Wildfires | Helping communities in need.
       </p>
     </footer>
-
-    <div class="modal modal_opened" id="volunteer_modal">
+    <!-- <div class="modal modal_opened" id="volunteer_modal">
       <div class="modal__container">
         <div class="modal__header">
           <div class="modal__title">
@@ -244,6 +236,6 @@
       </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script> -->
   </body>
 </html>
