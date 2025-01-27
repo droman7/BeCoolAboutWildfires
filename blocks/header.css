@@ -4,18 +4,27 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+
   flex-direction: column;
   overflow: hidden;
 }
 
 .header__logo {
-  border-radius: 10px;
-  width: 250px;
-  height: 250px;
+  /* border-radius: 10px; */
+  width: 200px;
+  height: 200px;
   margin: 0;
+  border-radius: 50%;
 }
 
+.header__mission {
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 500px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
 .header__motto {
   color: white;
   background-color: #7d4533;
@@ -27,9 +36,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  bottom: 0;
   z-index: -1;
-}
-
-.header__video {
 }

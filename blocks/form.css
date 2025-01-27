@@ -18,18 +18,24 @@
   color: white;
 }
 
-.form__submit-btn {
+.form__assistance-btn {
   align-self: center;
   margin-left: 88px;
   width: 125px;
   background-color: #a82525;
   color: white;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
 }
 
-.form__signup-btn {
+.form__volunteer-btn {
   align-self: center;
   margin-left: 88px;
   width: 100px;
   background-color: #56aeff;
   color: white;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
 }
