@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Be Cool About Wildfires</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header class="header">
@@ -15,11 +16,14 @@
           </li>
           <li>
             <a href="#volunteer" class="nav__link">Become a Volunteer</a>
+            <a href="#volunteer" class="nav__link">Become a Volunteer</a>
           </li>
           <li>
             <a href="#victim" class="nav__link">Find Assistance</a>
+            <a href="#victim" class="nav__link">Find Assistance</a>
           </li>
           <li>
+            <a href="#request-help" class="nav__link">About Us</a>
             <a href="#request-help" class="nav__link">About Us</a>
           </li>
         </ul>
@@ -28,8 +32,21 @@
       <p class="header__motto">
         Connecting wildfire victims with local volunteers for support.
       </p>
+      <h1 class="header__title">Be Cool About Wildfires</h1>
+      <p class="header__motto">
+        Connecting wildfire victims with local volunteers for support.
+      </p>
     </header>
 
+    <main>
+      <div class="mission">/* mission statement/about us and cause */</div>
+
+      <section>
+        <div class="connect connect__victum">
+          <h2 class="connect__title">Request Assistance</h2>
+          <p class="connect__description">
+            If you need food, water, or shelter, fill out this form.
+          </p>
     <div class="mission">/* mission statement/about us and cause */</div>
 
     <section class="connect" id="request-help">
@@ -39,31 +56,86 @@
           If you need food, water, or shelter, fill out this form.
         </p>
 
+          <form class="form__victim" id="victimForm">
+            <div class="form__group">
+              <label for="victimName" class="form__label">Full Name:</label>
+              <input type="text" id="victimName" class="form__input" required />
+            </div>
         <form class="form__victim" id="victimForm">
           <div class="form__group">
             <label for="victimName" class="form__label">Full Name:</label>
             <input type="text" id="victimName" class="form__input" required />
           </div>
 
-          <div class="form__group">
-            <label for="victimZip" class="form__label">Zip Code:</label>
-            <input type="text" id="victimZip" class="form__input" required />
-          </div>
+            <div class="form__group">
+              <label for="victimZip" class="form__label">Zip Code:</label>
+              <input type="text" id="victimZip" class="form__input" required />
+            </div>
 
-          <div class="form__group">
-            <label for="victimNeeds" class="form__label"
-              >What do you need?</label
-            >
-            <select id="victimNeeds" class="form__select" required>
-              <option value="" disabled selected>
-                Please select your need
-              </option>
-              <option value="shelter">Shelter</option>
-              <option value="food">Food</option>
-              <option value="water">Water</option>
-            </select>
-          </div>
+            <div class="form__group">
+              <label for="victimNeeds" class="form__label"
+                >What do you need?</label
+              >
+              <select id="victimNeeds" class="form__select" required>
+                <option value="" disabled selected>
+                  Please select your need
+                </option>
+                <option value="shelter">Shelter</option>
+                <option value="food">Food</option>
+                <option value="water">Water</option>
+              </select>
+            </div>
 
+            <button type="submit" class="form__submit-btn">
+              Submit Request
+            </button>
+          </form>
+        </div>
+
+        <div class="connect connect__volunteer">
+          <h2 class="connect__title">Become a Volunteer</h2>
+          <p class="connect__description">
+            Sign up to help wildfire victims in your area.
+          </p>
+          <form class="form__volunteer" id="volunteerForm">
+            <div class="form__group">
+              <label for="volunteerName" class="form__label">Full Name</label>
+              <input
+                type="text"
+                id="volunteerName"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="volunteerZip" class="form__label">Zip Code:</label>
+              <input
+                type="text"
+                id="volunteerZip"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="volunteerPhone" class="form__label"
+                >Phone Number:</label
+              >
+              <input
+                type="text"
+                id="volunteerPhone"
+                class="form__input"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="volunteerEmail" class="form__label">Email:</label>
+              <input
+                type="text"
+                id="volunteerEmail"
+                class="form__input"
+                required
+              />
+            </div>
           <button type="submit" class="form__submit-btn">Submit Request</button>
         </form>
       </div>
@@ -113,11 +185,21 @@
       </div>
     </section>
     <section class="matches" id="matchResults">
+            <button type="submit" class="form__submit-btn">Sign Up</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <section class="matches" id="matchResults">
       <div class="section__content">
+        <h2 class="matches__list">Available Volunteer Near You</h2>
+        <ul class="matches__list" id="volunteerList"></ul>
         <h2 class="matches__list">Available Volunteer Near You</h2>
         <ul class="matches__list" id="volunteerList"></ul>
       </div>
     </section>
+    <div class="about"></div>
     <div class="about"></div>
     <footer class="footer">
       <p class="footer__text">
@@ -216,18 +298,22 @@
           </li>
         </ul>
       </div>
+      <p class="footer__text">
+        &copy; 2025 Be Cool About Wildfires | Helping communities in need.
+      </p>
     </footer>
     <div class="modal modal_opened" id="volunteer_modal">
+    <!-- <div class="modal modal_opened" id="volunteer_modal">
       <div class="modal__container">
         <div class="modal__header">
           <div class="modal__title">
-            <button type="button" class="modal__close"></button>
+            <button type="button" class="modal__close-btn"></button>
           </div>
           <form class="modal__form" id="add-card-form">
-            <label for="add-card-link-input" class="modal__label">
+            <label for="add-card-name-input" class="modal__label">
               " Full Name: "
               <input
-                id="add-card-link-input"
+                id="add-card-name-input"
                 type="text"
                 class="modal__input"
                 name="name"
@@ -252,12 +338,17 @@
                 maxlength="10"
               />
               <span id="add-card-name-input-error" class="modal__error"></span>
+            <label for="add-card-zip-input" class="modal__label">
+              " Zip Code: " <input id="add-card-zip-input" type="number"
+              class="modal__input" name="zip_number" placeholder="Enter Zip
+              Code" required minlength="5" maxlength= 10">
+              <span id="add-card-zip-input-error" class="modal__error"></span>
             </label>
-            <label for="add-card-link-input" class="modal__label">
-              " Phone Number: " <input id="add-card-link-input" type="number"
+            <label for="add-card-phone-input" class="modal__label">
+              " Phone Number: " <input id="add-card-phone-input" type="number"
               class="modal__input" name="phone_number" placeholder="Enter Phone
               Number" required minlength="10" maxlength= 11">
-              <span id="add-card-name-input-error" class="modal__error"></span>
+              <span id="add-card-phone-input-error" class="modal__error"></span>
             </label>
             <label for="add-card-link-input" class="modal__label">
               " Email: "
@@ -272,6 +363,11 @@
                 maxlength="40"
               />
               <span id="add-card-name-input-error" class="modal__error"></span>
+            <label for="add-card-email-input" class="modal__label">
+              " Email: " <input id="add-card-email-input" type="text"
+              class="modal__input" name="email" placeholder="Enter Email"
+              required minlength="8" maxlength= 40">
+              <span id="add-card-email-input-error" class="modal__error"></span>
             </label>
             <button
               type="submit"
@@ -288,13 +384,13 @@
       <div class="modal__container">
         <div class="modal__header">
           <div class="modal__title">
-            <button type="button" class="modal__close"></button>
+            <button type="button" class="modal__close-btn"></button>
           </div>
           <form class="modal__form" id="add-card-form">
-            <label for="add-card-link-input" class="modal__label">
+            <label for="add-card-name-input" class="modal__label">
               " Full Name: "
               <input
-                id="add-card-link-input"
+                id="add-card-name-input"
                 type="text"
                 class="modal__input"
                 name="name"
@@ -319,6 +415,11 @@
                 maxlength="10"
               />
               <span id="add-card-name-input-error" class="modal__error"></span>
+            <label for="add-card-zip-input" class="modal__label">
+              " Zip Code: " <input id="add-card-zip-input" type="number"
+              class="modal__input" name="zip_number" placeholder="Enter Zip
+              Code" required minlength="5" maxlength= 10">
+              <span id="add-card-zip-input-error" class="modal__error"></span>
             </label>
             <label for="add-card-link-input" class="modal__label">
               " Phone Number: "
@@ -334,6 +435,11 @@
                 maxlength="11"
               />
               <span id="add-card-name-input-error" class="modal__error"></span>
+            <label for="add-card-phone-input" class="modal__label">
+              " Phone Number: " <input id="add-card-phone-input" type="number"
+              class="modal__input" name="phone_number" placeholder="Enter Phone
+              Number" required minlength="10" maxlength= 11">
+              <span id="add-card-phone-input-error" class="modal__error"></span>
             </label>
             <label for="add-card-link-input" class="modal__label">
               " Email: "
@@ -348,6 +454,11 @@
                 maxlength="40"
               />
               <span id="add-card-name-input-error" class="modal__error"></span>
+            <label for="add-card-email-input" class="modal__label">
+              " Email: " <input id="add-card-email-input" type="text"
+              class="modal__input" name="email" placeholder="Enter Email"
+              required minlength="8" maxlength= 40">
+              <span id="add-card-email-input-error" class="modal__error"></span>
             </label>
             <div class="modal">
               <label for="victimNeeds" class="modal">What do you need?</label>
@@ -371,6 +482,6 @@
       </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script> -->
   </body>
 </html>
