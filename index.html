@@ -63,6 +63,7 @@
                   class="form__input"
                   required
                 />
+                <span id="victimName-error" class="form__error"></span>
               </div>
 
               <div class="form__group">
@@ -73,6 +74,7 @@
                   class="form__input"
                   required
                 />
+                <span id="victimZip-error" class="form__error"></span>
               </div>
 
               <div class="form__group">
@@ -83,17 +85,23 @@
                   class="form__input"
                   required
                 />
+                <span id="victimPhone-error" class="form__error"></span>
               </div>
               <div class="form__group">
-                <label for="volunteerEmail" class="form__label">Email:</label>
+                <label for="victimEmail" class="form__label">Email:</label>
                 <input
                   type="text"
-                  id="volunteerEmail"
+                  id="victimEmail"
                   class="form__input"
                   required
                 />
+                <span id="victimEmail-error" class="form__error"></span>
               </div>
-              <button type="submit" class="form__assistance-btn">
+              <button
+                type="submit"
+                class="form__assistance-btn form__submit-btn form__submit-btn_disabled"
+                disabled
+              >
                 Request
               </button>
             </form>
@@ -114,6 +122,7 @@
                   class="form__input"
                   required
                 />
+                <span id="volunteerName-error" class="form__error"></span>
               </div>
               <div class="form__group">
                 <label for="volunteerZip" class="form__label">Zip Code:</label>
@@ -123,6 +132,7 @@
                   class="form__input"
                   required
                 />
+                <span id="volunteerZip-error" class="form__error"></span>
               </div>
               <div class="form__group">
                 <label for="volunteerPhone" class="form__label">Phone #:</label>
@@ -132,6 +142,7 @@
                   class="form__input"
                   required
                 />
+                <span id="volunteerPhone-error" class="form__error"></span>
               </div>
               <div class="form__group">
                 <label for="volunteerEmail" class="form__label">Email:</label>
@@ -141,8 +152,13 @@
                   class="form__input"
                   required
                 />
+                <span id="volunteerEmail-error" class="form__error"></span>
               </div>
-              <button type="submit" class="form__volunteer-btn">
+              <button
+                type="submit"
+                class="form__volunteer-btn form__submit-btn form__submit-btn_disabled"
+                disabled
+              >
                 Volunteer
               </button>
             </form>
@@ -254,106 +270,8 @@
           </ul>
         </div>
       </footer>
-      <!-- <div class="modal modal_opened" id="volunteer_modal">
-    
-    <div class="modal modal_opened" id="assistance_modal">
-      <div class="modal__container">
-        <div class="modal__header">
-          <div class="modal__title">
-            <button type="button" class="modal__close-btn"></button>
-          </div>
-          <form class="modal__form" id="add-card-form">
-            <label for="add-card-name-input" class="modal__label">
-              " Full Name: "
-              <input
-                id="add-card-name-input"
-                type="text"
-                class="modal__input"
-                name="name"
-                placeholder="Enter Name"
-                required
-                minlength="2"
-                maxlength="20"
-              />
-              <span id="add-card-name-input-error" class="modal__error"></span>
-            </label>
-            <label for="add-card-link-input" class="modal__label">
-              " Zip Code: "
-              <input
-                id="add-card-link-input"
-                type="number"
-                class="modal__input"
-                name="zip_number"
-                placeholder="Enter Zip
-              Code"
-                required
-                minlength="5"
-                maxlength="10"
-              />
-              <span id="add-card-name-input-error" class="modal__error"></span>
-            <label for="add-card-zip-input" class="modal__label">
-              " Zip Code: " <input id="add-card-zip-input" type="number"
-              class="modal__input" name="zip_number" placeholder="Enter Zip
-              Code" required minlength="5" maxlength= 10">
-              <span id="add-card-zip-input-error" class="modal__error"></span>
-            </label>
-            <label for="add-card-link-input" class="modal__label">
-              " Phone Number: "
-              <input
-                id="add-card-link-input"
-                type="number"
-                class="modal__input"
-                name="phone_number"
-                placeholder="Enter Phone
-              Number"
-                required
-                minlength="10"
-                maxlength="11"
-              />
-              <span id="add-card-name-input-error" class="modal__error"></span>
-            <label for="add-card-phone-input" class="modal__label">
-              " Phone Number: " <input id="add-card-phone-input" type="number"
-              class="modal__input" name="phone_number" placeholder="Enter Phone
-              Number" required minlength="10" maxlength= 11">
-              <span id="add-card-phone-input-error" class="modal__error"></span>
-            </label>
-            <label for="add-card-link-input" class="modal__label">
-              " Email: "
-              <input
-                id="add-card-link-input"
-                type="text"
-                class="modal__input"
-                name="email"
-                placeholder="Enter Email"
-                required
-                minlength="8"
-                maxlength="40"
-              />
-              <span id="add-card-name-input-error" class="modal__error"></span>
-            <label for="add-card-email-input" class="modal__label">
-              " Email: " <input id="add-card-email-input" type="text"
-              class="modal__input" name="email" placeholder="Enter Email"
-              required minlength="8" maxlength= 40">
-              <span id="add-card-email-input-error" class="modal__error"></span>
-            </label>
-            <div class="modal">
-              <label for="victimNeeds" class="modal">What do you need?</label>
-              <select id="victimNeeds" class="modal__select" required>
-                <option value="" disabled selected>
-                  Please select your need
-                </option>
-                <option value="shelter">Shelter</option>
-                <option value="food">Food</option>
-                <option value="water">Water</option>
-              </select>
-            </div>
-            <button
-              type="submit"
-              class="modal__submit-btn modal__submit-btn_disabled"
-            >
-              Submit
-            </button> -->
     </div>
   </body>
-  <script src="./index.js"></script>
+  <script defer src="./index.js"></script>
+  <script defer src="./scripts/validation.js"></script>
 </html>

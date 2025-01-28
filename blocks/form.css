@@ -39,3 +39,23 @@
   border: none;
   padding: 5px;
 }
+
+.form__submit-btn {
+  align-self: center;
+  margin-left: 20px;
+  width: 125px;
+  background-color: #a82525;
+  color: white;
+}
+
+.form__error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.form__submit-btn_disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
