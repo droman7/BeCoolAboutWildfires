@@ -46,3 +46,9 @@
   bottom: 0;
   z-index: -1;
 }
+
+@media (max-width: 643px) {
+  .header__mission {
+    max-width: 400px;
+  }
+}
