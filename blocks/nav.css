@@ -36,3 +36,22 @@
   color: #56aeff;
   text-shadow: 0 0 8px rgba(0, 119, 204, 0.8);
 }
+
+@media (max-width: 682px) {
+  .nav__links {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 643px) {
+  .nav__link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 555px) {
+  .nav {
+    flex-direction: column;
+    padding-right: 20px;
+  }
+}
