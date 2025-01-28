@@ -1,5 +1,6 @@
 .main {
-  background-image: linear-gradient(to right, #a82525, #56aeff);
+  display: block;
+  background-image: linear-gradient(#010001 0%, #fe8d0c 60%, #5e3023 100%);
 }
 
 .main__mission {
