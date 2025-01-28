@@ -16,15 +16,20 @@
   margin: 0;
 }
 .header__title {
-  color: white;
+  color: rgb(235, 216, 174);
+}
+
+.header__title-cool {
+  color: #56aeff;
 }
 .header__mission {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(235, 216, 174, 0.8);
   max-width: 500px;
   padding-left: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
+  border-radius: 25px;
 }
 /* .header__motto {
   color: white;
