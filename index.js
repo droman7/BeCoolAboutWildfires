@@ -59,7 +59,7 @@ const submitVolunteerButton = document.querySelector(".form__volunteer-btn");
 
 requestAssistanceButton.addEventListener("click", (e) => {
   e.preventDefault();
-  alert("Thank you for your submission");
+  alert("Thank you for your submission!");
 });
 
 submitVolunteerButton.addEventListener("click", (e) => {
