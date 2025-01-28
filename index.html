@@ -20,7 +20,7 @@
               <a href="#assistance" class="nav__link">Assistance</a>
             </li>
             <li>
-              <a href="#volunteerForm" class="nav__link">Volunteer</a>
+              <a href="#volunteer" class="nav__link">Volunteer</a>
             </li>
             <li>
               <a href="#about-us" class="nav__link">Contact Us</a>
@@ -54,56 +54,71 @@
         <section class="connect" id="assistance">
           <div class="connect__container connect__victim">
             <h2 class="connect__title">Request Assistance</h2>
-            <!-- <p class="connect__description">
-              If you need food, water, or shelter, fill out this form.
-            </p> -->
+            <p class="connect__description">
+              If you've been affected by the recent wildfires and need
+              assistance, our community is here to support you. Please fill out
+              the form below to help us understand your needs and provide the
+              appropriate aid.
+            </p>
             <form class="form__menu" id="victimForm">
               <div class="form__group">
-                <label for="victimName" class="form__label">Full Name:</label>
-                <input
-                  type="text"
-                  id="victimName"
-                  class="form__input"
-                  required
-                />
-                <span id="victimName-error" class="form__error"></span>
+                <label for="victimName" class="form__label">Name*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="victimName"
+                    class="form__input"
+                    placeholder="John Doe"
+                    required
+                  />
+                  <span id="victimName-error" class="form__error"></span>
+                </div>
               </div>
 
               <div class="form__group">
-                <label for="victimZip" class="form__label">Zip Code:</label>
-                <input
-                  type="text"
-                  id="victimZip"
-                  class="form__input"
-                  required
-                />
-                <span id="victimZip-error" class="form__error"></span>
+                <label for="victimZip" class="form__label">Zip Code*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="victimZip"
+                    class="form__input"
+                    placeholder="12345"
+                    required
+                  />
+                  <span id="victimZip-error" class="form__error"></span>
+                </div>
               </div>
 
               <div class="form__group">
-                <label for="victimPhone" class="form__label">Phone #:</label>
-                <input
-                  type="text"
-                  id="victimPhone"
-                  class="form__input"
-                  required
-                />
-                <span id="victimPhone-error" class="form__error"></span>
+                <label for="victimPhone" class="form__label">Phone*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="victimPhone"
+                    class="form__input"
+                    placeholder="000-000-0000"
+                    required
+                  />
+                  <span id="victimPhone-error" class="form__error"></span>
+                </div>
               </div>
               <div class="form__group">
-                <label for="victimEmail" class="form__label">Email:</label>
-                <input
-                  type="text"
-                  id="victimEmail"
-                  class="form__input"
-                  required
-                />
+                <label for="victimEmail" class="form__label">Email*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="victimEmail"
+                    class="form__input"
+                    placeholder="example@domain.com"
+                    required
+                  />
 
-                <span id="victimEmail-error" class="form__error"></span>
+                  <span id="victimEmail-error" class="form__error"></span>
+                </div>
               </div>
               <div class="form__group">
                 <label for="victimNeeds" class="form__label"
-                  >Select Your Needs:</label
+                  >Support needed:</label
                 >
                 <div id="victimNeeds">
                   <input
@@ -112,21 +127,27 @@
                     name="victimNeeds[]"
                     value="food"
                   />
-                  <label for="victimFood">Food</label>
+                  <label for="victimFood" class="form__checkbox-label"
+                    >Food</label
+                  >
                   <input
                     type="checkbox"
                     id="victimWater"
                     name="victimNeeds[]"
                     value="water"
                   />
-                  <label for="victimWater">Clothes</label>
+                  <label for="victimWater" class="form__checkbox-label"
+                    >Clothes</label
+                  >
                   <input
                     type="checkbox"
                     id="victimShelter"
                     name="victimNeeds[]"
                     value="shelter"
                   />
-                  <label for="victimShelter">Shelter</label>
+                  <label for="victimShelter" class="form__checkbox-label"
+                    >Shelter</label
+                  >
                 </div>
               </div>
 
@@ -139,59 +160,71 @@
               </button>
             </form>
           </div>
+        </section>
+        <section class="connect" id="volunteer">
           <div class="connect__container connect__volunteer">
             <h2 class="connect__title">Become a Volunteer</h2>
-            <!-- <p class="connect__description">
-              Sign up to help wildfire victims in your area.
+            <p class="connect__description">
+              To support individuals affected by the wildfires, please complete
+              the form below to volunteer.
             </p>
-            <form class="form__menu" id="volunteer">
-            </p> -->
+
             <form class="form__menu" id="volunteerForm">
               <div class="form__group">
-                <label for="volunteerName" class="form__label"
-                  >Full Name:</label
-                >
-                <input
-                  type="text"
-                  id="volunteerName"
-                  class="form__input"
-                  required
-                />
-                <span id="volunteerName-error" class="form__error"></span>
+                <label for="volunteerName" class="form__label">Name*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="volunteerName"
+                    class="form__input"
+                    placeholder="John Doe"
+                    required
+                  />
+                  <span id="volunteerName-error" class="form__error"></span>
+                </div>
               </div>
               <div class="form__group">
-                <label for="volunteerZip" class="form__label">Zip Code:</label>
-                <input
-                  type="text"
-                  id="volunteerZip"
-                  class="form__input"
-                  required
-                />
-                <span id="volunteerZip-error" class="form__error"></span>
+                <label for="volunteerZip" class="form__label">Zip Code*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="volunteerZip"
+                    class="form__input"
+                    placeholder="12345"
+                    required
+                  />
+                  <span id="volunteerZip-error" class="form__error"></span>
+                </div>
               </div>
               <div class="form__group">
-                <label for="volunteerPhone" class="form__label">Phone #:</label>
-                <input
-                  type="text"
-                  id="volunteerPhone"
-                  class="form__input"
-                  required
-                />
-                <span id="volunteerPhone-error" class="form__error"></span>
+                <label for="volunteerPhone" class="form__label">Phone*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="volunteerPhone"
+                    class="form__input"
+                    placeholder="000-000-0000"
+                    required
+                  />
+                  <span id="volunteerPhone-error" class="form__error"></span>
+                </div>
               </div>
               <div class="form__group">
-                <label for="volunteerEmail" class="form__label">Email:</label>
-                <input
-                  type="text"
-                  id="volunteerEmail"
-                  class="form__input"
-                  required
-                />
-                <span id="volunteerEmail-error" class="form__error"></span>
+                <label for="volunteerEmail" class="form__label">Email*:</label>
+                <div class="form__input-container">
+                  <input
+                    type="text"
+                    id="volunteerEmail"
+                    class="form__input"
+                    placeholder="example@domain.com"
+                    required
+                  />
+                  <span id="volunteerEmail-error" class="form__error"></span>
+                </div>
               </div>
               <div class="form__group">
                 <label for="volunteerAvailability" class="form__label"
-                  >Select Your Availability:</label
+                  >Availability:</label
                 >
                 <div id="volunteerAvailability">
                   <input
@@ -200,14 +233,18 @@
                     name="volunteerAvailability[]"
                     value="full-time"
                   />
-                  <label for="volunteerFullTime">Full-Time</label>
+                  <label for="volunteerFullTime" class="form__checkbox-label"
+                    >Full-Time</label
+                  >
                   <input
                     type="checkbox"
                     id="volunteerPartTime"
                     name="volunteerAvailability[]"
                     value="part-time"
                   />
-                  <label for="volunteerPartTime">Part-Time</label>
+                  <label for="volunteerPartTime" class="form__checkbox-label"
+                    >Part-Time</label
+                  >
                 </div>
               </div>
 
@@ -221,12 +258,6 @@
             </form>
           </div>
         </section>
-        <!-- <section class="matches" id="matchResults">
-          <div class="section__content">
-            <h2 class="matches__list">Available Volunteer Near You</h2>
-            <ul class="matches__list" id="volunteerList"></ul>
-          </div>
-        </section> -->
       </main>
 
       <footer class="footer" id="about-us">
