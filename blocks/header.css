@@ -11,12 +11,13 @@
 
 .header__logo {
   /* border-radius: 10px; */
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   margin: 0;
-  border-radius: 50%;
 }
-
+.header__title {
+  color: white;
+}
 .header__mission {
   background-color: rgba(255, 255, 255, 0.7);
   max-width: 500px;
@@ -25,12 +26,12 @@
   padding-bottom: 30px;
   padding-right: 30px;
 }
-.header__motto {
+/* .header__motto {
   color: white;
   background-color: #7d4533;
   margin-top: 40px;
   margin-bottom: 130px;
-}
+} */
 
 .header__loop {
   position: absolute;
