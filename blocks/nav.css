@@ -7,8 +7,8 @@
   width: 100%;
   box-sizing: border-box;
   padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 200px;
+  padding-right: 60px;
+  margin-bottom: 30px;
 }
 
 .nav__links {
@@ -22,9 +22,17 @@
 
 .nav__link {
   /* background-color: #7d4533; */
-  color: white;
+  color: rgb(235, 216, 174);
   height: 25px;
   width: 130px;
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: 20px;
+  text-decoration: none;
+  background-color: rgba(255, 69, 0, 0.4);
+  padding: 5px;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+.nav__link:hover {
+  color: #56aeff;
+  text-shadow: 0 0 8px rgba(0, 119, 204, 0.8);
 }
