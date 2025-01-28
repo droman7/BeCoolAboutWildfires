@@ -54,9 +54,9 @@
         <section class="connect" id="assistance">
           <div class="connect__container connect__victim">
             <h2 class="connect__title">Request Assistance</h2>
-            <p class="connect__description">
+            <!-- <p class="connect__description">
               If you need food, water, or shelter, fill out this form.
-            </p>
+            </p> -->
             <form class="form__menu" id="victimForm">
               <div class="form__group">
                 <label for="victimName" class="form__label">Full Name:</label>
@@ -98,8 +98,38 @@
                   class="form__input"
                   required
                 />
+
                 <span id="victimEmail-error" class="form__error"></span>
               </div>
+              <div class="form__group">
+                <label for="victimNeeds" class="form__label"
+                  >Select Your Needs:</label
+                >
+                <div id="victimNeeds">
+                  <input
+                    type="checkbox"
+                    id="victimFood"
+                    name="victimNeeds[]"
+                    value="food"
+                  />
+                  <label for="victimFood">Food</label>
+                  <input
+                    type="checkbox"
+                    id="victimWater"
+                    name="victimNeeds[]"
+                    value="water"
+                  />
+                  <label for="victimWater">Clothes</label>
+                  <input
+                    type="checkbox"
+                    id="victimShelter"
+                    name="victimNeeds[]"
+                    value="shelter"
+                  />
+                  <label for="victimShelter">Shelter</label>
+                </div>
+              </div>
+
               <button
                 type="submit"
                 class="form__assistance-btn form__submit-btn form__submit-btn_disabled"
@@ -111,10 +141,12 @@
           </div>
           <div class="connect__container connect__volunteer">
             <h2 class="connect__title">Become a Volunteer</h2>
-            <p class="connect__description">
+            <!-- <p class="connect__description">
               Sign up to help wildfire victims in your area.
             </p>
             <form class="form__menu" id="volunteer">
+            </p> -->
+            <form class="form__menu" id="volunteerForm">
               <div class="form__group">
                 <label for="volunteerName" class="form__label"
                   >Full Name:</label
@@ -157,6 +189,28 @@
                 />
                 <span id="volunteerEmail-error" class="form__error"></span>
               </div>
+              <div class="form__group">
+                <label for="volunteerAvailability" class="form__label"
+                  >Select Your Availability:</label
+                >
+                <div id="volunteerAvailability">
+                  <input
+                    type="checkbox"
+                    id="volunteerFullTime"
+                    name="volunteerAvailability[]"
+                    value="full-time"
+                  />
+                  <label for="volunteerFullTime">Full-Time</label>
+                  <input
+                    type="checkbox"
+                    id="volunteerPartTime"
+                    name="volunteerAvailability[]"
+                    value="part-time"
+                  />
+                  <label for="volunteerPartTime">Part-Time</label>
+                </div>
+              </div>
+
               <button
                 type="submit"
                 class="form__volunteer-btn form__submit-btn form__submit-btn_disabled"

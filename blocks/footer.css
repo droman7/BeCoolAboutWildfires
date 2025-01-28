@@ -1,12 +1,6 @@
 .footer {
-  background: linear-gradient(
-    270deg,
-    #7d4533,
-    /* Base brown */ #5e3023,
-    /* Dark brown */ #4c1c13,
-    /* Deep reddish-brown */ #3b1d0a,
-    /* Almost black brown */ #7d4533 /* Deep reddish-brown */
-  );
+  background: linear-gradient(#5e3023, #7d4533);
+
   background-color: #7d4533;
   display: flex;
   flex-direction: row;
