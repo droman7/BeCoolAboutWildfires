@@ -22,9 +22,11 @@
   width: 80px;
   color: rgb(235, 216, 174);
 }
+
 .form__checkbox-label {
   color: rgb(235, 216, 174);
 }
+
 .form__input-container {
   display: flex;
   flex-direction: column;
@@ -76,6 +78,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transform: translateY(0);
 }
+
 .form__submit-btn:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
   transform: translateY(-2px);
@@ -89,8 +92,15 @@
   display: block;
 }
 
-@media (max-width: 420px) {
-  .form__input {
-    width: 150px;
+@media (max-width: 472px) {
+  .form__group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__label {
+    white-space: nowrap;
+  }
+  .form__menu {
+    gap: 5px;
   }
 }

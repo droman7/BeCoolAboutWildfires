@@ -37,9 +37,6 @@
           is to turn the community itself into a resource by connecting victims
           to unaffected neighbors willing to lend a cooling hand.
         </div>
-        <!-- <p class="header__motto">
-          Connecting wildfire victims with local volunteers for support.
-        </p> -->
         <div class="header__loop">
           <video muted loop autoplay playsinline class="header__video">
             <source src="BurningForest.mp4" type="video/mp4" />
@@ -48,8 +45,6 @@
       </header>
 
       <main class="main">
-        <!-- <div class="mission">/* mission statement/about us and cause */</div> -->
-
         <section class="connect" id="assistance">
           <div class="connect__container connect__container_victim">
             <h2 class="connect__title">Request Assistance</h2>
@@ -116,35 +111,39 @@
               <div class="form__group">
                 <p class="form__label">Support needed:</p>
                 <div id="victimNeeds">
-                  <input
-                    type="checkbox"
-                    id="victimFood"
-                    name="victimNeeds[]"
-                    value="food"
-                  />
-                  <label for="victimFood" class="form__checkbox-label"
-                    >Food</label
-                  >
-
-                  <input
-                    type="checkbox"
-                    id="victimWater"
-                    name="victimNeeds[]"
-                    value="water"
-                  />
-                  <label for="victimWater" class="form__checkbox-label"
-                    >Water</label
-                  >
-
-                  <input
-                    type="checkbox"
-                    id="victimShelter"
-                    name="victimNeeds[]"
-                    value="shelter"
-                  />
-                  <label for="victimShelter" class="form__checkbox-label"
-                    >Shelter</label
-                  >
+                  <div class="form__checkbox-wrapper">
+                    <input
+                      type="checkbox"
+                      id="victimFood"
+                      name="victimNeeds[]"
+                      value="food"
+                    />
+                    <label for="victimFood" class="form__checkbox-label"
+                      >Food</label
+                    >
+                  </div>
+                  <div class="form__checkbox-wrapper">
+                    <input
+                      type="checkbox"
+                      id="victimWater"
+                      name="victimNeeds[]"
+                      value="water"
+                    />
+                    <label for="victimWater" class="form__checkbox-label"
+                      >Clothes</label
+                    >
+                  </div>
+                  <div class="form__checkbox-wrapper">
+                    <input
+                      type="checkbox"
+                      id="victimShelter"
+                      name="victimNeeds[]"
+                      value="shelter"
+                    />
+                    <label for="victimShelter" class="form__checkbox-label"
+                      >Shelter</label
+                    >
+                  </div>
                 </div>
               </div>
 
@@ -221,25 +220,28 @@
               <div class="form__group">
                 <p class="form__label">Availability:</p>
                 <div id="volunteerAvailability">
-                  <input
-                    type="checkbox"
-                    id="volunteerFullTime"
-                    name="volunteerAvailability[]"
-                    value="full-time"
-                  />
-                  <label for="volunteerFullTime" class="form__checkbox-label"
-                    >Full-Time</label
-                  >
-
-                  <input
-                    type="checkbox"
-                    id="volunteerPartTime"
-                    name="volunteerAvailability[]"
-                    value="part-time"
-                  />
-                  <label for="volunteerPartTime" class="form__checkbox-label"
-                    >Part-Time</label
-                  >
+                  <div class="form__checkbox-wrapper">
+                    <input
+                      type="checkbox"
+                      id="volunteerFullTime"
+                      name="volunteerAvailability[]"
+                      value="full-time"
+                    />
+                    <label for="volunteerFullTime" class="form__checkbox-label"
+                      >Full-Time</label
+                    >
+                  </div>
+                  <div class="form__checkbox-wrapper">
+                    <input
+                      type="checkbox"
+                      id="volunteerPartTime"
+                      name="volunteerAvailability[]"
+                      value="part-time"
+                    />
+                    <label for="volunteerPartTime" class="form__checkbox-label"
+                      >Part-Time</label
+                    >
+                  </div>
                 </div>
               </div>
 
@@ -354,28 +356,6 @@
         </div>
       </footer>
     </div>
-    <!-- <div class="modal" id="modal-assistance">
-      <div class="modal__container">
-        <div class="modal__header">
-          <div class="modal__title">
-            <div class="modal__description">
-              <p>Thank you for your submission!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" id="modal-volunteer">
-      <div class="modal__container">
-        <div class="modal__header">
-          <div class="modal__title">
-            <div class="modal__description">
-              <p>Thank you for your contribution!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <script defer src="./index.js"></script>
     <script defer src="./scripts/validation.js"></script>
   </body>
