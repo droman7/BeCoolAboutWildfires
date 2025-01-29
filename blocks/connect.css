@@ -89,3 +89,9 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 550px) {
+  .connect__container {
+    margin: 0 15px;
+  }
+}
