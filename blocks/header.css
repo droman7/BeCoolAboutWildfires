@@ -30,6 +30,7 @@
   padding-bottom: 30px;
   padding-right: 30px;
   border-radius: 25px;
+  text-align: center;
 }
 /* .header__motto {
   color: white;
@@ -50,5 +51,28 @@
 @media (max-width: 643px) {
   .header__mission {
     max-width: 400px;
+  }
+}
+@media (max-width: 470px) {
+  .header__mission {
+    max-width: 300px;
+    font-size: 15px;
+    padding: 15px;
+  }
+  .header__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 362px) {
+  .header__title {
+    font-size: 10px;
+  }
+}
+@media (max-width: 339px) {
+  .header__mission {
+    padding: 5px;
+  }
+  .header__title {
+    text-align: center;
   }
 }

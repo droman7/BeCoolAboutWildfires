@@ -123,3 +123,15 @@
     max-width: 268px;
   }
 }
+
+@media (max-width: 457px) {
+  .footer__contributors {
+    margin: 0;
+  }
+  .footer__list {
+    padding-left: 0;
+  }
+  .footer__text {
+    max-width: 170px;
+  }
+}

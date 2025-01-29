@@ -83,3 +83,15 @@
   margin-top: 4px;
   display: block;
 }
+@media (max-width: 472px) {
+  .form__group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__label {
+    white-space: nowrap;
+  }
+  .form__menu {
+    gap: 5px;
+  }
+}
