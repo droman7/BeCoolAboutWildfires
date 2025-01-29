@@ -52,3 +52,14 @@
     max-width: 400px;
   }
 }
+
+@media (max-width: 450px) {
+  .header__title {
+    text-align: center;
+  }
+
+  .header__mission {
+    max-width: 300px;
+    padding: 15px;
+  }
+}
