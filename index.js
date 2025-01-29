@@ -13,6 +13,7 @@ function handleVolunteerFromSubmit(evt) {
 }
 formVolunteer.addEventListener("submit", handleVolunteerFromSubmit);
 
+// const cardModal = document.querySelector("#modal-assistance");
 const requestAssistanceButton = document.querySelector(".form__assistance-btn");
 const submitVolunteerButton = document.querySelector(".form__volunteer-btn");
 
@@ -20,10 +21,12 @@ requestAssistanceButton.addEventListener("click", (e) => {
   e.preventDefault();
   alert("Thank you for your submission");
   formVictim.reset();
+  disableButton(requestAssistanceButton, settings);
 });
 
 submitVolunteerButton.addEventListener("click", (e) => {
   e.preventDefault();
   alert("Thank you for your contribution!");
   formVolunteer.reset();
+  disableButton(submitVolunteerButton, settings);
 });
