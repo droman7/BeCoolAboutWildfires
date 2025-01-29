@@ -19,14 +19,14 @@ const submitVolunteerButton = document.querySelector(".form__volunteer-btn");
 
 requestAssistanceButton.addEventListener("click", (e) => {
   e.preventDefault();
-  alert("Thank you for your submission");
+  alert("Thank you for your submission! You will be connected soon.");
   formVictim.reset();
   disableButton(requestAssistanceButton, settings);
 });
 
 submitVolunteerButton.addEventListener("click", (e) => {
   e.preventDefault();
-  alert("Thank you for your contribution!");
+  alert("Thank you for your contribution! You will be contacted shortly.");
   formVolunteer.reset();
   disableButton(submitVolunteerButton, settings);
 });
