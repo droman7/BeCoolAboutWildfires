@@ -20,13 +20,17 @@ Our site utilized the following tech stack to bring it all together:
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript for site functionality
+- GitHub for team collaboration
+- Canva for Organization's Logo
+- VS Code for local repo work and management
 
 ## Deployment
 
 This Webpage is deployed to GitHub Pages
 
-- Deployment Link: https://github.com/droman7/BeCoolAboutWildfires
+- Local Repository Link: https://github.com/droman7/BeCoolAboutWildfires
+- Official Deployed Website Link: https://droman7.github.io/BeCoolAboutWildfires/
 
 ## Plans
 
